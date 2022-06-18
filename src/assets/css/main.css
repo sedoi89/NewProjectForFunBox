@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Exo20';
+    font-style: normal;
+    font-weight: 400;
+    src: url("Exo2.0-Thin.woff2") format('woff2');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("../Pattern.png");
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+
+}
+.Card {
+    background: #F2F2F2;
+    outline: 4px solid #1698D9;
+    border-radius: 12px;
+    width: 320px;
+    height: 480px;
+    margin-top: 100px;
+    margin-left: 100px;
+    position: relative;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+.main-title {
+    font-family: 'Exo20';
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-shadow: 0px 1px 1px #000000;
+    font-style: normal;
+    color: #F2F2F2;
+}
+.title {
+    padding-top: 21px;
+    margin-left: 51px;
+    margin-right: 64px;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+.Card h1,h2, .present {
+    margin-left: 51px;
+    margin-right: 64px;
+}
+.Card h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+.Card h2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+.present {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+}
+
+.cat {
+    position: absolute;
+    top: 208px;
+    left: -1px;
+   border-radius: 12px;
+}
+.round {
+    position: absolute;
+    top: 384px;
+    left: 224px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1698D9;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text {
+    margin-top: 15px;
+    font-size: 42px;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+.text_2 {
+    font-size: 21px;
+}
+
+.Corner {
+    position: absolute;
+    left: -29.5px;
+    top: -33.5px;
+    display: block;
+    border-right: 4px solid #1698D9;
+    width: 58px;
+    height: 70px;
+    content: '';
+    overflow: hidden;
+    transform: rotate(45deg);
+    z-index: 50;
+
+}
+
+.Corner::before {
+    z-index: -1;
+    position: absolute;
+    left: -38px;
+    top: -24px;
+    width: 125px;
+    height: 125px;
+    display: block;
+    content: '';
+    background: url("../Pattern.png") 100px  200px;
+    transform: rotate(-45deg);
+
+}
